@@ -4,7 +4,7 @@ import { Login } from "./componentes/login/login"
 function App() {
   return (
     <div>
-      < Header />
+      
       < Login />
     </div>  
   )
