@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.section-login{
+    display: flex;
+    justify-content: center;
+}
+
+
+.login{
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    gap: 3.5rem;
+    background-color: #fff;
+    padding: 20px;
+    width: 500px;
+    margin: 0 50px;
+    border-radius: 10px;   
+    box-shadow: 5px 5px 5px black; 
+
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    gap: 3.5rem;
+    background-color: #191919;
+    padding: 20px;
+    width: 500px;
+    margin: 0 50px;
+    border-radius: 10px;    
+}
+
+input{
+  height: 50px;
+  border-radius: 10px;
+    
+}
+
+label{
+    font-size: 30px;    
+    
+
+}
