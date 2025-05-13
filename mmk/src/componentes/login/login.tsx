@@ -1,6 +1,6 @@
 import './login.css'
 
-import CarroAnimado from "../../imagem/655d2da400a648abca600766a89deead.gif"
+import CarroAnimado from "../../imagem/supawork-ae84be9c4e3c42e6a71d2ae7a00bb588.gif"
 import Logo from "../../imagem/Captura de Tela (259).png"
 
 export function Login() {
