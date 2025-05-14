@@ -1,7 +1,7 @@
 import './login.css'
 
 import CarroAnimado from "../../imagem/supawork-ae84be9c4e3c42e6a71d2ae7a00bb588.gif"
-import Logo from "../../imagem/Captura de Tela (259).png"
+import Logo from "../../imagem/ChatGPT Image 14 de mai. de 2025, 09_06_52.png"
 
 export function Login() {
     return (
