@@ -1,13 +1,21 @@
 import './header.css'
 
 
-export function Header(){
-    return(
+export function Header() {
+    return (
         <div>
-        <header>
-            
-            <h1>MMK</h1>
-        </header>
+            <header className="header">
+                <div className="logo">MMK</div>
+                <nav className="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Modelos</a></li>
+                        <li><a href="#">Inovação</a></li>
+                        <li><a href="#">Sobre</a></li>
+                    </ul>
+                </nav>
+            </header>
+
         </div>
     )
 }

@@ -1,0 +1,193 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  
+}
+
+body {
+  background: #1e1e1e;
+  color: #fff;
+
+}
+
+
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+}
+
+.logo-mmk{
+    width: 100px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+.nav a {
+  color: rgb(56, 56, 56);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  color: #fff;
+}
+
+
+
+
+
+.nav a:hover {
+  color: #adabab;
+}
+
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+
+}
+
+/* Seções */
+.left, .right {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  height: 100vh;
+}
+
+.left {
+  background-color: #f9f8f6; /* vermelho */
+  color: white;
+}
+
+.right {
+  background-color: #b30000; /* prata */
+  align-items: center;
+  text-align: center;
+}
+.car-image {
+  max-width: 120%;
+  height: auto;
+  margin-top: 20px;
+  transform: translateX(-6%); /* Move a imagem para a esquerda */
+  z-index: 2;
+  position: relative;
+  width: 90%;
+}
+
+/* Cabeçalhos */
+.title {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 70px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* Conteúdo e botão */
+.description {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #000;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  width: fit-content;
+}
+
+/* Imagem */
+.car-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+
+
+.car-container {
+  width: 90%;
+  position: relative;
+  right: 25%;
+  rotate: -7deg;
+ 
+}
+
+
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+ body {
+  overflow-x: hidden;
+}
+
+  .nav{
+    display: none;
+  }
+  .main {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .right{
+    display: none;
+  }
+
+  .car-image {
+  max-width: 60%;
+  
+}
+
+.car-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.car-image {
+  width: 100%;
+  max-width: 350px; /* Altere esse valor para controlar o tamanho */
+  height: auto;
+}
+
+
+
+
+
+}

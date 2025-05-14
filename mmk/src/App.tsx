@@ -1,11 +1,10 @@
-import { Header } from "./componentes/header/header"
-import { Login } from "./componentes/login/login"
+
+import { Home } from "./pages/home/home"
 
 function App() {
   return (
     <div>
-      
-      < Login />
+      <Home />
     </div>  
   )
 }
