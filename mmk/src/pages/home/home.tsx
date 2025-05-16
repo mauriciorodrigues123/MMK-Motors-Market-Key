@@ -15,7 +15,7 @@ export function Home() {
                 <nav className="nav">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">modelos</a></li>
+                        <li><a href="#">Modelos</a></li>
                         <li><Link to="/login">Login</Link></li>
                         <li><a href="#">Sobre</a></li>
 
@@ -28,7 +28,7 @@ export function Home() {
                     <div className="title">Motors Market Key</div>
                     <div className="subtitle">Bem-vindo</div>
 
-                    <p className="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat porro vel.</p>
+                    <p className="description">Do código à estrada: seu carro, nossa missão.</p>
                     <nav>
                         <a href="#" className="btn">Saiba mais</a>
                     </nav>

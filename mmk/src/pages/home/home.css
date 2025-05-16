@@ -13,6 +13,7 @@
   --cor-vermelho-forte: #b30000;
   --cor-preto-forte: #000;
   --cor-amarelo-forte: #f4b400;
+  --cor-cromio:#D1D0CC;
 }
 
 /* cabeçalho */
@@ -52,6 +53,11 @@
   text-decoration: none;
   font-weight: bold;
   color: var(--cor-branco-cinza);
+}
+
+.nav a:hover {
+  color: var(--cor-cromio);
+  
 }
 
 .main {
@@ -101,7 +107,8 @@
   color: var(--cor-preto-forte);
   font-size: 70px;
   font-family: "Bebas Neue", sans-serif;
-
+  position: relative;
+  top: 30px;
 
 }
 
@@ -109,7 +116,7 @@
   font-size: 1.5em;
   margin-bottom: 20px;
   color: var(--cor-preto-forte);
-  font-size: 20px;
+  font-size: 40px;
   font-family: "Bebas Neue", sans-serif;
 }
 
