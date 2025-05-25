@@ -1,7 +1,48 @@
-.Foto{
-    width: 160px,
-    height: 160px,
-    objectFit: cover,
-    borderRadius: 50%,
-    border: 5px solid blue,
+
+.page-wrapper {
+      flex: 1;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.Foto {
+      display: flex;
+      flex: 1;
+      max-width: 1700px;
+      margin: auto;
+      background-color: #f9f8f6;
+      border: 2px solid black; 
+      box-shadow: 15px 20px 0px black; 
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 50px;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      display: flex;
+      height: 80vh;
+}
+
+
+.content-center {
+     box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+}
+
+.titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: blueviolet;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
 }
