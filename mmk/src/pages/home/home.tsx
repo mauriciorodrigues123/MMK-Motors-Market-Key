@@ -1,27 +1,14 @@
 import './home.css'
 import './responsivo.css'
 import Mustang from "../../imagem/ChatGPT_Image_14_de_mai._de_2025__18_41_19-removebg-preview.png"
-import Logo from "../../imagem/ChatGPT Image 14 de mai. de 2025, 09_06_52.png"
-import { Link } from "react-router-dom";
+import { Header } from '../../componentes/header/header';
 
 
 export function Home() {
     return (
         <div>
-            <header className="header">
-                <div className="logo">
-                    <img className='logo-mmk' src={Logo} alt="logo" />
-                </div>
-                <nav className="nav">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Modelos</a></li>
-                        <li><Link to="/login">Login</Link></li>
-                        <li><a href="#">Sobre</a></li>
+            <Header />
 
-                    </ul>
-                </nav>
-            </header>
             <main className="main">
                 <section className="left" >
 

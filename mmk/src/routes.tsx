@@ -3,6 +3,7 @@ import { Home } from "./pages/home/home";
 import { Login } from "./componentes/login/login";
 import { Sobre } from "./pages/sobre/sobre";
 
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -15,6 +16,9 @@ const router = createBrowserRouter([
     {
         path: "sobre",
         element: <Sobre />
+    },
+    {
+        
     }
     
 ])
