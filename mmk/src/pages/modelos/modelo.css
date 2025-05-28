@@ -1,0 +1,274 @@
+.pagina-modelos {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 2rem;
+}
+
+.container-modelos {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.lista-carros {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cartao-carro {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carro-flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.imagem-carro {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info-carro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info-principal {
+    margin-bottom: 0.5rem;
+}
+
+.nome-carro {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.tipo-carro {
+    color: #666;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.especificacoes {
+    display: flex;
+    gap: 2rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.especificacoes span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.preco-selecionar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    min-width: 150px;
+}
+
+.precos {
+    text-align: right;
+}
+
+.preco-total {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.preco-total span:first-child {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.texto-total {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.botao-selecionar {
+    background-color: #ff1e00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.botao-selecionar:hover {
+    background-color: #f13d07;
+}
+
+/* Estilos do Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-conteudo {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 450px;
+    position: relative;
+}
+
+.botao-fechar {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #ff4444;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+}
+
+.botao-fechar:hover {
+    background: #ff0000;
+}
+
+.modal-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.modal-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.modal-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.modal-body h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.lista-especificacoes {
+    list-style: none;
+    padding: 0;
+    margin: 0.8rem 0;
+}
+
+.lista-especificacoes li {
+    margin-bottom: 0.4rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.preco-modal {
+    margin: 1.2rem 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.botao-comprar {
+    width: 100%;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.botao-comprar:hover {
+    background-color: #45a049;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carro-flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .imagem-carro {
+        width: 100%;
+        height: 200px;
+    }
+
+    .preco-selecionar {
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .precos {
+        text-align: center;
+    }
+
+    .preco-dia {
+        align-items: center;
+    }
+
+    .modal-conteudo {
+        width: 90%;
+        padding: 1rem;
+        max-width: 400px;
+    }
+
+    .modal-header img {
+        height: 180px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .nome-carro {
+        font-size: 1.2rem;
+    }
+
+    .especificacoes {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

@@ -1,13 +1,11 @@
-import "../../pages/home/home.css"
-import "./header.css"
+import Logo from "../../imagem/Captura de Tela (259).png"
 import { Link } from "react-router-dom";
-import Logo from "../../imagem/ChatGPT Image 14 de mai. de 2025, 09_06_52.png"
+import "./header2.css"
 
-
-
-export function Header() {
+export function Header2() {
     return (
-        <header className="header">
+        <div>
+            <header className="header">
             <div className="logo">
                 <img className='logo-mmk' src={Logo} alt="logo" />
             </div>
@@ -20,5 +18,6 @@ export function Header() {
                 </ul>
             </nav>
         </header>
-    )
+        </div>
+    );
 }

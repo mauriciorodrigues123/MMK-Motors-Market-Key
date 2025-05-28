@@ -16,50 +16,6 @@
   --cor-cromio:#D1D0CC;
 }
 
-/* cabeçalho */
-
-.header {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  background: transparent;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-}
-
-.logo {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: white;
-
-}
-
-.logo-mmk {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-
-}
-
-.nav ul {
-  list-style: none;
-  display: flex;
-  gap: 4rem;
-}
-
-.nav a {
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--cor-branco-cinza);
-}
-
-.nav a:hover {
-  color: var(--cor-cromio);
-  
-}
-
 .main {
   display: flex;
   flex-wrap: wrap;
