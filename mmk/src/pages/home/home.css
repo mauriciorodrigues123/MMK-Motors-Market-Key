@@ -6,6 +6,7 @@
 
 }
 
+
 /* palheta de cores do site*/
 
 :root {
@@ -13,7 +14,7 @@
   --cor-vermelho-forte: #b30000;
   --cor-preto-forte: #000;
   --cor-amarelo-forte: #f4b400;
-  --cor-cromio:#D1D0CC;
+  --cor-cromio: #D1D0CC;
 }
 
 .main {
@@ -107,13 +108,104 @@
   rotate: -7deg;
 }
 
-/*segunda sessao*/
+/* Seção Mostruário do Carro */
+.mostruario-carro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.mostruario-esquerda {
+  flex: 1;
+  padding: 60px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mostruario-esquerda h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+}
+
+.mostruario-esquerda p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.mostruario-botao {
+  display: inline-block;
+  background-color: var(--cor-preto-forte);
+  color: var(--cor-branco-cinza);
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin: 0 auto;
+}
+
+.mostruario-botao:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mostruario-direita {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mostruario-carro-imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.mostruario-carro-imagem:hover {
+  transform: scale(1.05);
+}
+
+
+/*sessao de sugestao*/
 .section-Sugestoes {
   margin: 0 auto;
   text-align: center;
   padding: 30px;
-  height: 80vh;
-  margin-top: 80px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--cor-branco-cinza);
 }
 
 .section-Sugestoes h2 {
@@ -125,6 +217,11 @@
 .cards {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .card {
@@ -134,11 +231,14 @@
   box-shadow: 15px 14px 0 var(--cor-preto-forte);
   transition: transform 0.3s, box-shadow 0.3s;
   border: solid;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px ;
+  box-shadow: 0 8px 20px;
 }
 
 .card-icon {
@@ -157,6 +257,3 @@
   font-size: 0.95em;
   color: #555;
 }
-
-/*footer*/
-

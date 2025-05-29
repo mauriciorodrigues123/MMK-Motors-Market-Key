@@ -1,6 +1,7 @@
-
 import { useState } from "react"
-import "./modelo.css"
+import "./carros.css"
+import { Header } from "../../componentes/header/header";
+import { Footer } from "../../componentes/footer/footer";
 
 interface Carro {
     id: number;
@@ -15,7 +16,7 @@ interface Carro {
     };
 }
 
-export function Modelo() {
+export function Carros() {
     const [modalAberto, setModalAberto] = useState(false);
     const [carroSelecionado, setCarroSelecionado] = useState<Carro | null>(null);
 
@@ -58,11 +59,10 @@ export function Modelo() {
     };
 
     return (
-        <div>
+        <div className="pagina-modelos">
+            <Header />
 
-            <div className="pagina-modelos">
-
-
+            <div className="container-principal">
                 <div className="container-modelos">
                     <h1 className="titulo">Selecione um Veículo</h1>
 
@@ -128,7 +128,7 @@ export function Modelo() {
                     </div>
                 )}
             </div>
+            <Footer />
         </div>
-
     )
 }

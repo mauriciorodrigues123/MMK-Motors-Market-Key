@@ -1,7 +1,10 @@
 import './home.css'
 import './responsivo.css'
 import Mustang from "../../imagem/ChatGPT_Image_14_de_mai._de_2025__18_41_19-removebg-preview.png"
+import carro from "../../imagem/imagens-carros/thumbnail.png"
 import { Header } from '../../componentes/header/header';
+import { Footer } from '../../componentes/footer/footer';
+import { Link } from 'react-router-dom';
 
 
 export function Home() {
@@ -24,6 +27,17 @@ export function Home() {
                 <section className="right">
                     <div className="car-container">
                         <img src={Mustang} alt="Mustang Car" className="car-image" />
+                    </div>
+                </section>
+
+                <section className="mostruario-carro">
+                    <div className="mostruario-esquerda">
+                        <h1>conheça nossos carros</h1>
+                        <p>De carros custo benefícios a veículos de luxo, temos tudo o que você precisa. Deixe-nos ajudar você a encontrar o carro perfeito para as suas necessidades. Temos uma ampla seleção de veículos para escolher, então temos certeza de que você encontrará algo que combine com o seu estilo.</p>
+                        <Link to={"carros"} className="mostruario-botao">Venha conhecer mais carros</Link>
+                    </div>
+                    <div className="mostruario-direita">
+                        <img src={carro} alt="Mustang Car" className="mostruario-carro-imagem" />
                     </div>
                 </section>
 
@@ -58,6 +72,8 @@ export function Home() {
                     </div>
                 </section>
             </main>
+
+            <Footer />
         </div>
     )
 }
