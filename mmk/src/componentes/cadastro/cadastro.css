@@ -1,0 +1,138 @@
+/* Reset e configurações globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Seção do formulário */
+.secao-formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    margin-bottom: 1.5rem;
+}
+
+/* Título */
+.titulo {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Campos do formulário */
+.grupo-input {
+    margin-bottom: 1rem;
+}
+
+.rotulo {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.campo {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1.5px solid #eee;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: border-color 0.2s;
+}
+
+.campo:focus {
+    outline: none;
+    border-color: #ff1e00;
+}
+
+/* Botão */
+.botao {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ff1e00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 0.5rem;
+}
+
+.botao:hover {
+    background-color: #e61b00;
+}
+
+/* Texto de rodapé */
+.texto-rodape {
+    margin-top: 1rem;
+    color: #666;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.texto-rodape a {
+    color: #ff1e00;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 0.3rem;
+}
+
+.texto-rodape a:hover {
+    text-decoration: underline;
+}
+
+/* Seção da imagem */
+.secao-imagem {
+    flex: 1.2;
+    background: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2083&auto=format&fit=crop') center/cover;
+    position: relative;
+}
+
+.secao-imagem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .secao-formulario {
+        max-width: 100%;
+        padding: 2rem;
+    }
+
+    .secao-imagem {
+        display: none;
+    }
+}
