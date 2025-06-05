@@ -147,92 +147,114 @@
 }
 
 .modal-conteudo {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 450px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
     position: relative;
-}
-
-.botao-fechar {
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    background: #ff4444;
-    border: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.2s;
-}
-
-.botao-fechar:hover {
-    background: #ff0000;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .modal-header {
-    text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .modal-header img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 1rem;
 }
 
 .modal-header h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    color: #333;
+    margin: 0;
 }
 
-.modal-body h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.lista-especificacoes {
-    list-style: none;
-    padding: 0;
-    margin: 0.8rem 0;
-}
-
-.lista-especificacoes li {
-    margin-bottom: 0.4rem;
-    color: #666;
-    font-size: 0.95rem;
-}
-
-.preco-modal {
-    margin: 1.2rem 0;
-    text-align: center;
-    font-size: 1.1rem;
-}
-
-.botao-comprar {
-    width: 100%;
-    padding: 1rem;
-    background-color: #4CAF50;
-    color: white;
+.botao-fechar {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: none;
     border: none;
-    border-radius: 5px;
+    font-size: 1.5rem;
     cursor: pointer;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
+    color: #666;
 }
 
-.botao-comprar:hover {
-    background-color: #45a049;
+.configuracao-aluguel {
+    padding: 1rem 0;
+}
+
+.form-aluguel {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-aluguel .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-aluguel label {
+    font-weight: 600;
+    color: #444;
+}
+
+.form-aluguel select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.resumo-aluguel {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.resumo-aluguel h4 {
+    margin: 0 0 1rem 0;
+    color: #333;
+}
+
+.resumo-aluguel p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.aviso-km {
+    font-size: 0.875rem;
+    color: #dc3545;
+    margin-top: 1rem;
+}
+
+.botao-continuar,
+.botao-alugar {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+}
+
+.botao-continuar:hover,
+.botao-alugar:hover {
+    background-color: #0056b3;
 }
 
 /* Responsividade */

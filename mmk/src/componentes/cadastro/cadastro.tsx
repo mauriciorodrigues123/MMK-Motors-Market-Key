@@ -62,7 +62,7 @@ export function Cadastro() {
                 </form>
 
                 <div className="texto-rodape">
-                    Já tem uma conta?<Link to="/login">Fazer login</Link>
+                    Já tem uma conta?<Link to="">Fazer login</Link>
                 </div>
             </div>
 
